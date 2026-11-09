@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl"><head>
+<html lang="ar" dir="rtl">
+<head>
   <meta charset="UTF-8">
   <title>تسجيل الدخول - جامعة الأزهر</title>
   <style>
@@ -75,13 +76,13 @@
 </head>
 <body>
   <div class="login-box">
-   <img src="https://azu.edu.eg/Images/azlogo.png" alt="شعار كلية جدة العالمية الاهلية" class="logo-img" style="height:44px;width:auto;display:block;object-fit:contain">
+   </h2><img src="https://azu.edu.eg/Images/azlogo.png"  alt="شعار جامعة الأزهر" class="logo-img" style="height:44px;width:auto;display:block;object-fit:contain"></h2>
     <h2>تسجيل الدخول لنظام بيانات الطلاب</h2>
     <p></p>
 
     <form onsubmit="return loginUser()">
-      <input type="text" id="username" placeholder="الاسم" required="">
-      <input type="password" id="password" placeholder="الرقم القومي" required="">
+      <input type="text" id="username" placeholder="رقم القيد" required>
+      <input type="password" id="password" placeholder="كلمة المرور" required>
       <button type="submit">دخول</button>
       <div class="error" id="error-msg">❌ اسم المستخدم أو كلمة المرور غير صحيحة</div>
     </form>
@@ -94,8 +95,8 @@
       let errorMsg = document.getElementById("error-msg");
 
       // بيانات الدخول الصحيحة
-      let correctUser = "وفاء ابوطالب جاد حسن الحداد";
-      let correctPass = "27709251200409";
+      let correctUser = "0351254";
+      let correctPass = "naz69$#";
 
       if(user === correctUser && pass === correctPass){
         window.location.href = "agriculture.html"; 
@@ -106,6 +107,5 @@
       }
     }
   </script>
-
-
-</body></html>
+</body>
+</html>
